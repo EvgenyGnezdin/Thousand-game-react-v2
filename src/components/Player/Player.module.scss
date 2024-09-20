@@ -1,0 +1,33 @@
+$pink-color: #ddcefe;
+$red-color: #fb4a5e;
+
+.player {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    > .name {
+        display: flex;
+        > h4 {
+            font-size: 22px;
+            color: $pink-color;
+        }
+        > h4:last-child {
+            margin-left: 25px;
+        }
+    }
+    > .count {
+        display: flex;
+        > .delete {
+            cursor: pointer;
+            color: $red-color;
+            width: 25px;
+            height: 25px;
+        }
+        > h4 {
+            font-size: 25px;
+            color: #fff;
+            margin-right: 80px;
+        }
+    }
+}

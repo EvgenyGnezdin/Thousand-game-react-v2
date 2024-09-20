@@ -1,0 +1,30 @@
+$pink-color: #ddcefe;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    > button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 15px 12px;
+        border-radius: 25px;
+        border: 1px solid $pink-color;
+        background: transparent;
+        max-width: 145px;
+        margin-bottom: 150px;
+        > .back {
+            color: $pink-color;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        > .backItem {
+            color: #fff;
+            margin-right: 7px;
+            width: 17px;
+            height: 17px;
+        }
+    }
+}

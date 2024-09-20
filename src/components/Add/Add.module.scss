@@ -1,0 +1,72 @@
+$pink-color: #ddcefe;;
+$red-color: #fb4a5e;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    > button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 15px 12px;
+        border-radius: 25px;
+        border: 1px solid $pink-color;
+        background: transparent;
+        max-width: 145px;
+        > .back {
+            color: $pink-color;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        > .backItem {
+            color: #fff;
+            margin-right: 7px;
+            width: 17px;
+            height: 17px;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: calc(100vh - 147px);
+        > h2 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: calc(25vh - 147px);
+            color: $pink-color;
+        }
+        > input {
+            border: none;
+            border-bottom: solid 1px $pink-color;
+            background: transparent;
+            padding: 20px 0;
+            outline: none;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 90%;
+            min-width: 60%;
+            color: $red-color;
+            &:focus {
+                color: $pink-color;
+            }
+        }
+        > button {
+            cursor: pointer;
+            margin: 0 auto;
+            width: 250px;
+            padding: 17px 35px;
+            border-radius: 25px;
+            margin-top: 50px;
+            border: none;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: $red-color;
+            color: #fff;
+            box-shadow: 0 0 10px $red-color;
+        }
+    }
+}

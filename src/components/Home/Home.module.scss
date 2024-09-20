@@ -1,0 +1,39 @@
+$pink-color: #ddcefe;
+
+.home {
+    > .buttonBlock {
+        display: flex;
+        justify-content: space-between;
+        > button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 15px 12px;
+            border-radius: 25px;
+            
+            border: 1px solid $pink-color;
+            background: transparent;
+            > .addIcons {
+                color: #fff;
+                margin-right: 7px;
+                width: 17px;
+                height: 17px;
+            }
+            > .addLink {
+                color: $pink-color;
+                font-size: 15px;
+                font-weight: 700;
+                text-decoration: none;
+            } 
+        }
+    }
+    > h3 {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        color: $pink-color;
+    }
+    > .listPlayer {
+        margin-top: 70px;
+    }
+}
